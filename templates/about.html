@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="about section" id="about">
+    <div class="about-left">
+      <div class="about-img-wrap">
+        <img
+          src="/static/images/about.jpg"
+          alt="About Me"
+          onerror="this.src='https://placehold.co/360x440/e8ff47/1a1a2e?text=ABOUT+ME'"
+        />
+        <div class="about-img-decor"></div>
+      </div>
+    </div>
+    <div class="about-right">
+      <p class="section-tag">— About Me</p>
+      <h2 class="section-title">Design is not just<br/><em>what it looks like</em></h2>
+      <p class="about-text">
+        Main ek passionate UI/UX aur Graphic Designer hun jo user-centric designs banata hai.
+        Mera goal har project mein aesthetic beauty aur functional clarity ka perfect balance achieve karna hai.
+      </p>
+      <p class="about-text">
+        Figma, Adobe XD, Photoshop, Illustrator, aur After Effects mein expertise ke saath
+        main brands ko visually compelling aur meaningful banata hun.
+      </p>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <p>Projects</p>
+        </div>
+        <div class="stat">
+          <span class="stat-num">30+</span>
+          <p>Clients</p>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <p>Years Exp</p>
+        </div>
+      </div>
+      <a href="#contact" class="btn-primary">Let's Talk</a>
+    </div>
+  </section>
+  {% endblock %}

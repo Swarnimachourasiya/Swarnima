@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact" >
+<form method = "POST">
+  {% csrf_token %}
+     <div class="contact-left">
+      <p class="section-tag">— Get In Touch</p>
+      <h2 class="section-title">Let's Create<br/><em>Something Great</em></h2>
+      <p class="contact-desc">Koi project ho, collaboration ho, ya sirf hello bolna ho — main hamesha available hun!</p>
+      <div class="contact-links">
+        <a href="swarnimachourasiya@gmail.com" class="contact-link">📧swarnimachourasiya73@gmail.com</a>
+        <a href="tel:+919876543210" class="contact-link">📞 +91 7389472743</a>
+        <a href="#" class="contact-link">🌐 behance.net/swarnima</a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <div class="contact-form">
+        <input type="text" placeholder="Your Name" name = "Name"/>
+        <input type="email" placeholder="Your Email" name = "Email"/>
+        <input type="text" placeholder="Subject" name ="Subject"/>
+        <textarea rows="5" placeholder="Your Message" name ="Message"></textarea>
+        <button class="btn-primary" style="text-align:center">Send Message ✦
+      </div>
+    </div>
+  </section>
+</form>
+{% endblock %}
